@@ -1,0 +1,34 @@
+{
+  "name": "bank-management-app",
+  "version": "1.0.0",
+  "description": "Full-stack bank management application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd client && npm install",
+    "dev-all": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "keywords": [
+    "bank",
+    "management",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.3",
+    "sequelize": "^6.37.7",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "mongodb-memory-server": "^11.0.0",
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,119 @@
+.transfers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.transfer-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.transfer-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateX(4px);
+}
+
+.transfer-icon {
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f4f6;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.transfer-info {
+  flex: 1;
+}
+
+.transfer-info h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+  color: #1f2937;
+}
+
+.transfer-info p {
+  margin: 0 0 5px 0;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.transfer-info small {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+.transfer-amount {
+  text-align: right;
+}
+
+.transfer-amount .amount {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 5px;
+}
+
+.transfer-amount .date {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.transfer-type-selector {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.type-option {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.type-option input[type="radio"] {
+  cursor: pointer;
+}
+
+.type-option.active {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.type-option span {
+  font-weight: 500;
+  color: #374151;
+}
+
+.type-option.active span {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .transfer-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .transfer-amount {
+    text-align: center;
+  }
+}
